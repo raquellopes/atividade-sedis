@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #8cebe5;
+}
+.logo>img{
+    width: 200px;
+    height: auto;
+    position: relative;
+}
+
+.menu-principal > li {
+    list-style: none;
+    display: inline;
+}
+
+.menu-principal > ul{
+    list-style: none;
+    display: inline;
+}
+
+.menu-principal > .quemsomos li{
+    list-style: none;
+}
+
+.menu-principal > .comites li{
+    list-style: none;
+}
+
+.menu-principal > .transparencia{
+    list-style: none;
+}
+
+
+.menu-principal >.faleconosco{
+    list-style: none;
+}
+    
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+button.accordion:before{
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    margin-right: 5px;
+    border: 2px solid #777;
+    border-radius: 50%;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+button.accordion.active:before {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}

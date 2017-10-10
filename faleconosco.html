@@ -1,0 +1,25 @@
+
+<body style= "background-color: #F4FDFC" ></body> 
+
+
+<form method="post" id="contato" action="mailto:izabelraq@gmail.com" oninput="calc_Total();"> <!--  */VER PHP- mail to n servirá -->
+    
+       
+       <fieldset id="usuario"><legend>Identificação do Usuário </legend>
+           <p><lable for="cNome">Nome: </lable>
+            <input type="text" name="tNome" id="cNome"/> </p> 
+   
+        
+           <p><lable for="Mail">E-mail: </lable>
+           <input type="email" name="tMail" id="cMail"/> </p>
+   
+   
+    
+   <fieldset id="mensagem"><legend> Mensagem</legend>
+       <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"> </textarea> <!-- Text area= obj com caixas de texto maior q um comum -->
+   </fieldset>
+   
+   
+   <input type="submit" value="enviar"/>
+
+   
