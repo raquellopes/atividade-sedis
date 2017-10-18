@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Inicio</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/seguranca.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="bg">
+            <div class="container">
+                    <header>
+                            <div class="top">
+                                <div class="logo">
+                                    <img src="images/logo.png">
+                                </div>
+            
+                                
+                                <nav class="navbar"> 
+                                    <div class="dropdown">
+                                        <button class="dropbtn"> Quem Somos</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                        
+                                        </div>
+                                      </div>
+            
+                                      <div class="dropdown">
+                                        <button class="dropbtn"> Comissões e Comitês</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          
+                                        </div>
+                                      </div>
+            
+                                      <div class="dropdown">
+                                        <button class="dropbtn"> Transparência</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                       
+                                        </div>
+                                      </div>    
+            
+                                      <div class="dropdown">
+                                        <button class="dropbtn"> Fale conosco</button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Contato</a>
+                                          <a href="faleconosco.html"> Deixe uma mensagem</a>
+                                          
+                                        </div>
+                                      </div>
+            
+                                      <a href="http://www.google.com.br" target="_blank">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                      </a>
+
+                                      
+                                </nav>
+                            </div>
+                          
+                            <nav class="barnav"> 
+                            <div class= "listabo">
+                                <a href="index.html"> Carreira</a>
+                                <a href="seguranca.html">Segurança do Trabalho</a>
+                                <a href="saude.html"> Saúde</a>
+                                <a href="direitosedeveres.html"> Direitos e Deveres</a>
+                                <a href="projetos.html"> Projetos</a>
+                                <a href="capacitacao.html"> Capacitação</a>
+                                <a href="concurso.html"> Concurso público</a>
+                                <a href="qualidadedevida.html"> Qualidade de vida</a>
+                            </div>
+                          </nav>
+                        </header>
+
+        
+
+                        <section class="banner">
+                            <figure class="imagem">
+                              <img src="images/bg-header.png">
+                            </figure>
+                        </section>
+                                
+                    </div>
+
+                    <section class="seguranca">
+                        <h1 class="title"> Segurança do Trabalho</h1>
+                </section>
+        
+                <div class="container">
+            
+                    <div class="conteudo">
+                        <div class="painel">
+                                <button class="accordion">Exame para investedura no Cargo Público(posse)</button>
+                                <div class="panel">
+                                  <article>
+                                    <p>Algum Texto...</p>
+                                  </article>
+                                </div>
+                                
+                                <button class="accordion">Estágio Probatório</button>
+                                <div class="panel">
+                                  <p>Algum Texto...</p>
+                                </div>
+                                
+                                <button class="accordion">Desenvolvimento na Carreira</button>
+                                <div class="panel">
+                                  <p>Algum texto...</p>
+                                </div> 
+        
+                                <button class="accordion">Avaliação por desempenho</button>
+                                <div class="panel">
+                                  <p>Algum texto...</p>
+                                </div> 
+                        </div>
+                    </div>
+                </div>
+        
+                <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].onclick = function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight){
+                      panel.style.maxHeight = null;
+                    } else {
+                      panel.style.maxHeight = panel.scrollHeight + "px";
+                    } 
+                  }
+                }
+            </script>
+            </body>
+        </html>
+        
