@@ -117,15 +117,14 @@ padding: 40px;
     color: #ffffff; 
 }
 
-/* Dropdown Button */
-.dropbtn {
+.dropbtn { /* Menu de cima */
     padding: 5px;
     font-size: 14px;
     border: none;
     cursor: pointer;
     background: transparent;
 }
-  .dropbtn::after {
+  .dropbtn::after { /* Menu de cima */
     font-family: FontAwesome; /* Tenho que chamar a fonte quando for inserir Font Awesome */
     font-weight: normal;
     font-style: normal;
@@ -134,15 +133,14 @@ padding: 40px;
     
   }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
+
+.dropdown {  /* Menu superior */
     position: relative;
     display: inline-block;
     
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.dropdown-content {  /* Menu superior */
     display: none;
     position: absolute;
     min-width: 160px;
@@ -151,28 +149,26 @@ padding: 40px;
     background-color: #fff;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content a {  /* Menu superior */
     color: black;
     padding: 2px 2px;
     text-decoration: none;
     display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown-content a:hover {background-color: #f1f1f1}  /* Menu superior */
+
+
+.dropdown:hover .dropdown-content {  /* Menu superior */
     display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn {  /* Menu superior */
     background-color:#fff;
 
 }
-/* Style the buttons that are used to open and close the accordion panel */
+/* Acorddion */
 button.accordion {
     background-color: #2E96B3;
     color: #fff;
@@ -186,40 +182,11 @@ button.accordion {
     margin: 10px 0px 0px 10px;
     
 }
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* Quando passar o mouse pelo accordion */
 button.accordion.active, button.accordion:hover {
     background-color: #ccc;
 }
 
-/* Style the accordion panel. Note: hidden by default */
-div.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-button.accordion:before{
-    font-family: FontAwesome; 
-    font-weight: normal;
-    font-style: normal;
-    content: '\f13a';
-    font-size: 13px;
-    color: #fff;
-    margin-right: 5px;
-    padding-left: 0px;
-    padding-right: 2px;
-}
-
-button.accordion.active:before {
-    font-family: FontAwesome; 
-    font-weight: normal;
-    font-style: normal;
-    content: '\f138'; /* Unicode character for "minus" sign (-) */
-    color: #fff;
-}
- 
 .fa-search:before { /* Botando a barrinha preta */
     content: "\f002";
     color: black;

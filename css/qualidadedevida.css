@@ -186,34 +186,6 @@ button.accordion {
 button.accordion.active, button.accordion:hover {
     background-color: #ccc;
 }
-
-/* Style the accordion panel. Note: hidden by default */
-div.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-button.accordion:before{
-    font-family: FontAwesome; 
-    font-weight: normal;
-    font-style: normal;
-    content: '\f13a';
-    font-size: 13px;
-    color: #fff;
-    margin-right: 5px;
-    padding-left: 0px;
-    padding-right: 2px;
-}
-
-button.accordion.active:before {
-    font-family: FontAwesome; 
-    font-weight: normal;
-    font-style: normal;
-    content: '\f138'; /* Unicode character for "minus" sign (-) */
-    color: #fff;
-}
  
 .fa-search:before { /* Botando a barrinha preta */
     content: "\f002";

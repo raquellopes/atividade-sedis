@@ -67,7 +67,7 @@
                             <nav class="barnav"> 
                             <div class= "listabo">
                                 <a href="index.html"> Carreira</a>
-                                <a href="seguranca.html">Segurança do Trabalho</a>
+                                <a href="seguranca.html"> Segurança do Trabalho</a>
                                 <a href="saude.html"> Saúde</a>
                                 <a href="direitosedeveres.html"> Direitos e Deveres</a>
                                 <a href="projetos.html"> Projetos</a>
@@ -88,55 +88,50 @@
                                 
                     </div>
 
-                    <section class="direitosedeveres">
-                        <h1 class="title"> Direitos e Deveres</h1>
-                </section>
-        
-                <div class="container">
-            
-                    <div class="conteudo">
-                        <div class="painel">
-                                <button class="accordion">Exame para investedura no Cargo Público(posse)</button>
-                                <div class="panel">
-                                  <article>
-                                    <p>Algum Texto...</p>
-                                  </article>
-                                </div>
-                                
-                                <button class="accordion">Estágio Probatório</button>
-                                <div class="panel">
-                                  <p>Algum Texto...</p>
-                                </div>
-                                
-                                <button class="accordion">Desenvolvimento na Carreira</button>
-                                <div class="panel">
-                                  <p>Algum texto...</p>
-                                </div> 
-        
-                                <button class="accordion">Avaliação por desempenho</button>
-                                <div class="panel">
-                                  <p>Algum texto...</p>
-                                </div> 
+                  </div>
+                  
+                          </div>
+                  
+                          <section class="direitosedeveres">
+                                  <h1 class="title"> Direitos e Deveres</h1>
+                          </section>
+                       
+                          <div class="container">
+
+                      <div id="accordion">
+                        <button class="accordion"> Exame para investedura no Cargo Público(posse) </button>
+                        <div>
+                          <p> Algum Texto aqui  </p>
+                          </article>
                         </div>
-                    </div>
-                </div>
-        
-                <script>
-                var acc = document.getElementsByClassName("accordion");
-                var i;
-                
-                for (i = 0; i < acc.length; i++) {
-                  acc[i].onclick = function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight){
-                      panel.style.maxHeight = null;
-                    } else {
-                      panel.style.maxHeight = panel.scrollHeight + "px";
-                    } 
-                  }
-                }
-            </script>
-            </body>
-        </html>
-        
+                        
+    
+                        <button class="accordion"> Estágio Probatório </button>
+                        <div>
+                            <p> Algum Texto aqui  </p>
+                        </div>
+    
+                        <button class="accordion"> Desenvolvimento na Carreira </button>
+                        <div>
+                            <p> Algum Texto aqui  </p>
+                        </div>
+    
+                        <button class="accordion"> Avaliação por desempenho </button>
+                        <div>
+                            <p> Algum Texto aqui  </p>
+                        </div>
+    
+                      </div>
+                      
+                      
+                      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+                      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                      <script>
+                      $( function() {
+                        $( "#accordion" ).accordion();
+                      } );
+                      </script>
+                      </body>
+    
+    
+                      </html>
